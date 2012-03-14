@@ -1850,7 +1850,7 @@ return result;	\
 	}
 	NSDictionary *dict = [args count] > 1 ? [args objectAtIndex:1] : nil;
 	BOOL animated = [TiUtils boolValue:@"animated" properties:dict def:YES];
-	int scrollPosition = [TiUtils intValue:@"position" properties:dict def:UITableViewScrollPositionMiddle];
+	int scrollPosition = [TiUtils intValue:@"position" properties:dict def:UITableViewScrollPositionNone];
 	[[self tableView] selectRowAtIndexPath:path animated:animated scrollPosition:scrollPosition];
 }
 
